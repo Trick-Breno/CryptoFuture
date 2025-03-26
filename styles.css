@@ -154,6 +154,11 @@ header{
 }
 
 @media (max-width: 489px) {
+
+    header, main, section, footer, article {
+        padding: 0px 20px;
+    }
+
     header {
         display: block;
         text-align: center;
