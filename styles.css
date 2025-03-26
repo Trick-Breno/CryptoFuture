@@ -108,6 +108,9 @@ header{
     color: white;
 }
 
+.hero-content {
+}
+
 .secao-destaque img {
     width: 406px;
     height: 356px;
@@ -134,6 +137,10 @@ header{
 }
 
 @media (max-width: 767px) {
+    header, main, section, footer, article {
+        padding: 0px 20px;
+    }
+    
     header {
         justify-content: left;
         gap: 30px;
@@ -154,11 +161,6 @@ header{
 }
 
 @media (max-width: 489px) {
-
-    header, main, section, footer, article {
-        padding: 0px 20px;
-    }
-
     header {
         display: block;
         text-align: center;
