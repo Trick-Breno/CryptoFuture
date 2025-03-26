@@ -71,7 +71,7 @@ header{
   
   /* Divisor ":" entre os blocos */
   .divisor {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #00E5FF;
   }
@@ -102,37 +102,46 @@ header{
 .secao-destaque {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center; 
-    height: 100vh;
+    min-height:100vh;
     background-image: linear-gradient(100deg, #220F33, #720987);
     color: white;
 }
 
-.hero-content {
+.secao-destaque img {
+    max-width: 506px;
 }
 
-.secao-destaque img {
-    width: 406px;
-    height: 356px;
+.hero-content {
+    /*min-width: 504px;
+    max-width: 687px;
+    */
 }
 
 .hero-content h1 {
     margin: 0px;
+    margin-bottom: 20px;
     font-size: 47px;
 }
 
 .hero-content p {
     font-size: 16px;
     max-width: 640px;
+    margin-bottom: 30px;
+
+
 }
 
 .inscreva-se {
+    margin-top: 20px;
     font-size: 20px;
     font-weight:600;
     color: white;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: #D404C0;
-    padding: 10px 18px;
+    padding: 10px 40px;
     border: none;
 }
 
@@ -140,7 +149,7 @@ header{
     header, main, section, footer, article {
         padding: 0px 20px;
     }
-    
+
     header {
         justify-content: left;
         gap: 30px;
@@ -161,9 +170,33 @@ header{
 }
 
 @media (max-width: 489px) {
+    header, main, section, footer, article {
+        padding: 8px;
+    }
+
     header {
         display: block;
         text-align: center;
+    }
+
+    .secao-destaque img {
+        min-width: 344px;
+        max-width: 473px;
+    }
+
+    .hero-content h1 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 12px;
+    
+    }
+    
+    .inscreva-se {
+        font-size: 16px;
+        margin-top: 0px;
     }
 
     .logo {
@@ -175,6 +208,8 @@ header{
         display: inline-flex;
         align-items: center;
     }
+
+
 
 }
 
