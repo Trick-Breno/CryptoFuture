@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Perguntas Frequentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .faq-question {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .faq-answer {
+            padding: 15px;
+            background-color: #f1f1f1;
+            display: none;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <button class="faq-question">O que é FAQ?</button>
+        <p class="faq-answer">FAQ significa "Perguntas Frequentes". É uma lista de perguntas e respostas sobre um determinado tópico.</p>
+
+        <button class="faq-question">Como posso acessar minha conta?</button>
+        <p class="faq-answer">Para acessar sua conta, basta clicar em "Entrar" no canto superior direito e fornecer suas credenciais.</p>
+
+        <button class="faq-question">Onde posso encontrar mais informações sobre produtos?</button>
+        <p class="faq-answer">Você pode encontrar mais informações sobre nossos produtos na seção "Produtos" no menu principal.</p>
+    </div>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

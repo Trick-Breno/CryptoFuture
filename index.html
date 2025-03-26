@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoFuture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link para o seu arquivo de estilos -->
+  <script defer src="scripts.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</head>
+<body>
+  <header>
+    <div class="box-logo">
+      <h2 class="logo">CryptoFuture</h2>
+    </div>
+       
+
+    <div class="contagem-regressiva" id="tempo-restante">
+      <div class="tempo">
+        <span class="label">Dias</span>
+        <span id="dias">00</span>
+      </div>
+
+      <div class="divisor">:</div>
+      <div class="tempo">
+        <span class="label">Horas</span>
+        <span id="horas">00</span>
+      </div>
+
+      <div class="divisor">:</div>
+      <div class="tempo">
+        <span class="label">Minutos</span>
+        <span id="minutos">00</span>
+      </div>
+
+      <div class="divisor">:</div>
+      <div class="tempo">
+        <span class="label">Segundos</span>
+        <span id="segundos">00</span>
+      </div>
+      
+    </div>
+
+    <nav class="menu-header">
+      <a href="#Início">Início</a>
+      <a href="#Pesquisar">Pesquisar</a>
+      <a class="inscreva-se-header" href="#inscreva-se">Inscreva-se</a>
+    </nav>
+    <!-- fazer pesquisa com a lupa como um button de pesquisa
+    colocar o botao dentro do plaxceholder?
+    criar uma div-input-button? 
+    
+    <input type="text" class="pesquisar" placeholder="Palavra chave">
+    -->
+  </header>
+
+  <main class="secao-destaque">
+    <div class="hero-content">
+      <h1>O Caminho para a Revolução <br>Financeira</h1>
+      <p>Desvende o universo das criptomoedas! Entenda como elas estão moldando o 
+        futuro, descubra as oportunidades que oferecem e aprenda, de forma segura 
+        e prática, como dar os primeiros passos nesse novo sistema financeiro.</p>
+      <button class="inscreva-se">Inscreva-se agora</button>
+    </div>
+
+    <img src="img/grafico.png" alt="Descrição da imagem">
+  </main>
+
+  <section class="sobre">
+    <div class="box-sobre">
+      <h2>O que é o CryptoFuture</h2>
+      <p>O CryptoFuture é um evento online e gratuito, voltado para quem deseja entender os fundamentos das criptomoedas e seu impacto no mundo financeiro. No dia 15 de abril de 2025, às 19h (horário de Brasília), você poderá participar de uma experiência imersiva e aprender sobre conceitos essenciais, desmistificar termos técnicos e conhecer as principais estratégias para explorar esse mercado.
+      </p>
+    </div>
+
+    <div class="box-sobre">
+      <h2>O que você vai aprender</h2>
+      <ul>
+        <li>Como as criptomoedas funcionam e por que elas são revolucionárias</li>
+        <li>Diferença entre Bitcoin, Ethereum e outras criptos</li>
+        <li>Segurança digital: como proteger seus ativos digitais</li>
+        <li>Como começar a investir sem cometer erros comuns</li>
+      </ul>
+    </div>
+  </section>
+
+  <article class="palestrante">
+    <div class="box-palestrante">
+
+      <img src="" alt="">
+
+      <div class="info-palestrante">
+        <h2>Conheça nossa palestrante</h2>
+        <h3>Camila Martins</h3>
+        <p>Especialista em Blockchain, Inovação Financeira e Segurança Digital</p>
+        <p>Com mais de 8 anos de experiência no mercado de criptomoedas e tecnologia financeira, atuei como analista de segurança em uma das maiores exchanges do Brasil e hoje sou consultora para startups do setor financeiro, ajudando empresas a implementarem soluções baseadas em blockchain.
+          Sou formada em Ciência da Computação pela USP e pós-graduada em Blockchain e Finanças Digitais pela Universidade de Lisboa, com especialização em segurança digital e ativos descentralizados.
+          Já participei como palestrante em eventos internacionais sobre inovação financeira e tecnologia blockchain, compartilhando insights sobre o impacto e as oportunidades desse mercado. No CryptoFuture, vou apresentar os fundamentos das criptomoedas e como elas estão remodelando o cenário econômico global.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="inscricao">
+    <div class="box-Inscricao">
+
+      <h2>Garanta sua Vaga Agora!</h2>
+      <p>Evento 100% online e gratuito
+        As vagas são limitadas! Não perca essa oportunidade.
+      </p>
+        
+      <form action="#">
+        <input type="text" placeholder="Nome Completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <p>Após a inscrição, você receberá um e-mail com todos os detalhes do evento.</p>
+        <button type="submit">Inscreva-se agora</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="box-faq">
+      <h2>Perguntas frequentes</h2>
+
+      <button class="faq-pergunta">O evento é realmente gratuito?</button>
+      <p class="faq-resposta">Sim! O CryptoFuture é 100% gratuito. Basta se inscrever para garantir sua vaga e receber o link de acesso.</p>
+
+      <button class="faq-pergunta">O evento será gravado?</button>
+      <p class="faq-resposta"> Sim! Os inscritos terão acesso à gravação do evento por um período limitado após sua realização.</p>
+
+      <button class="faq-pergunta">Preciso ter conhecimento prévio sobre criptomoedas?</button>
+      <p class="faq-resposta"> Não! O evento foi pensado para iniciantes e para quem deseja entender os conceitos fundamentais antes de dar os primeiros passos no mercado cripto.
+      </p>
+
+      <button class="faq-pergunta"> Como faço para participar do evento?
+      </button>
+      <p class="faq-resposta">Basta clicar no botão “Inscreva-se”, preencher seus dados e aguardar o e-mail de confirmação com o link de acesso.
+      </p>
+
+      <button class="faq-pergunta">Vai ter certificado de participação?
+      </button>
+      <p class="faq-resposta">Sim! Todos os inscritos que assistirem ao evento receberão um certificado digital de participação.
+      </p>
+
+  </div>
+  </section>
+
+  <footer>
+    <h2>links rapidos</h2>
+    <nav>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#pesqisar">Pesquisar</a></li>
+      <li><a href="#inscreva-se">Inscreva-se</a></li>
+    </nav>
+
+    <div class="contato">
+      <h2>Contato</h2>
+      <a href="mailto:contato@exemplo.com">E-mail: contato@cryptofuture.com </a>
+
+      <a href="https://br.linkedin.com/">
+        <img src="imagem.jpg" alt="Descrição da imagem">
+      </a>
+      
+      <a href="https://www.instagram.com/">
+        <img src="imagem.jpg" alt="Descrição da imagem">
+      </a>
+      
+    </div>
+    <p>&copy; 2025 CryptoFuture. Todos os direitos reservados.  </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
