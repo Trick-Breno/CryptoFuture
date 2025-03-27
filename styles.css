@@ -114,11 +114,11 @@ header{
     max-width: 506px;
 }
 
-.hero-content {
-    /*min-width: 504px;
+/*.hero-content {
+    min-width: 504px;
     max-width: 687px;
-    */
-}
+    
+}*/
 
 .hero-content h1 {
     margin: 0px;
