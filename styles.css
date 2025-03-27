@@ -179,9 +179,20 @@ header{
         text-align: center;
     }
 
+    .secao-destaque {
+        display: block;
+        text-align: center;
+        gap: 0px;
+    }
+
+
     .secao-destaque img {
-        min-width: 344px;
-        max-width: 473px;
+        width: 344px;
+    }
+
+    .hero-content{
+        display: block;
+
     }
 
     .hero-content h1 {
@@ -191,12 +202,18 @@ header{
     
     .hero-content p {
         font-size: 12px;
+        text-align: justify;
     
     }
     
     .inscreva-se {
         font-size: 16px;
+        margin-bottom: 30px;
         margin-top: 0px;
+        width: 100%;
+        border-radius: 15px;
+        padding: 13px 0px;
+    
     }
 
     .logo {
