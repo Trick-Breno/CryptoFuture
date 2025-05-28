@@ -1,5 +1,5 @@
 // Data do evento: 15 de abril de 2025, 19:00
-const dataEvento = new Date('2025-04-15T19:00:00').getTime();
+const dataEvento = new Date('2025-07-15T19:00:00').getTime();
 
 function atualizarContagem() {
   const agora = new Date().getTime();

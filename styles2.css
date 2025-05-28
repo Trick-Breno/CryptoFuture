@@ -1,5 +1,5 @@
 body {
-    min-width: 347px;
+    min-width: 280px;
     font-family: "Poppins", sans-serif;
     margin: 0px;
     padding: 0px;
@@ -15,10 +15,11 @@ body {
     )
 }*/
 header, main, section, footer, article {
-    padding: 8px;
+    padding: 0px 50px;
 
 }
 header{
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
@@ -143,7 +144,7 @@ header{
     border: none;
 }
 
-/*@media (max-width: 767px) {
+@media (max-width: 767px) {
     header, main, section, footer, article {
         padding: 0px 20px;
     }
@@ -160,58 +161,16 @@ header{
         font-size: 16px;
     }
     .label {
-        font-size: 8px; 
+        font-size: 8px; /* Tamanho do texto superior */
     }
     .menu-header {
         display: none;
     }
-}*/
+}
 
-@media (max-width: 767px) {
+@media (max-width: 489px) {
     header, main, section, footer, article {
         padding: 8px;
-    }
-        .menu-header {
-        display: none;
-    }
-
-    .contagem-regressiva {
-        display: flex;
-        align-items: center;
-        gap: 10px; /* Espaçamento entre os blocos */
-    }
-  
-    /* Bloco de tempo (Dias, Horas, Minutos, Segundos) */
-    .tempo {
-        display: flex;
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        align-items: center;    /* Centraliza o conteúdo */
-    }
-    
-    /* Rótulos (Dias, Horas, Minutos, Segundos) */
-    .label {
-        color: white;
-        font-size: 10px; /* Tamanho do texto superior */
-        text-transform: uppercase; /* Letras maiúsculas */
-    }
-    
-    /* Números da contagem */
-    .tempo span:last-child {
-        background: #00E5FF;   /* Fundo azul */
-        color: #000;           /* Texto preto */
-        padding: 3px 6px;
-        border-radius: 4px;
-
-        font-size: 14px; /* Tamanho do número */
-        font-weight: bold; /* Negrito */
-    }
-    
-    /* Divisor ":" entre os blocos */
-    .divisor {
-        margin-top: 15px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #00E5FF;
     }
 
     header {
@@ -220,9 +179,8 @@ header{
     }
 
     .secao-destaque {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: block;
+        text-align: center;
         gap: 0px;
     }
 
@@ -233,8 +191,6 @@ header{
 
     .hero-content{
         display: block;
-        max-width: 507px;
-
 
     }
 
@@ -245,7 +201,7 @@ header{
     }
     
     .hero-content p {
-        font-size: 14px;
+        font-size: 12px;
         text-align: justify;
     
     }
@@ -270,40 +226,13 @@ header{
         align-items: center;
     }
 
-    .sobre {
-        background-color: #210127;
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
 
 
-    }
-
-    .box-sobre {
-        border: 1px solid #78078E;
-        border-radius: 15px;
-        margin: 20px 5px;
-        padding: 0px 20px;
-        max-width: 507px;
-
-
-    }
-
-    .box-sobre h2 {
-        text-align: center;
-    }
-
-    .box-sobre p {
-        text-align: justify;
-    }
-
-    .box-sobre span {
-        color: #FF09E6;
-    }
 }
 
-    /* Para telas de tablets em modo retrato */
-    @media (min-width: 768px) and (max-width: 1024px) {
-        /* Estilos para tablets */
-    }
+
+
+/* Para telas de tablets em modo retrato */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tablets */
+}
