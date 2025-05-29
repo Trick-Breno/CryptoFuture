@@ -168,8 +168,8 @@ header{
 }*/
 
 @media (max-width: 767px) {
-    header, main, section, footer, article {
-        padding: 8px;
+    main, section, footer, article {
+        padding: 20px;
     }
         .menu-header {
         display: none;
@@ -245,7 +245,7 @@ header{
     }
     
     .hero-content p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: justify;
     
     }
@@ -283,7 +283,7 @@ header{
     .box-sobre {
         border: 1px solid #78078E;
         border-radius: 15px;
-        margin: 20px 5px;
+        margin: 20px 0px;
         padding: 0px 20px;
         max-width: 507px;
 
@@ -296,10 +296,73 @@ header{
 
     .box-sobre p {
         text-align: justify;
+        font-size: 16px;
     }
 
     .box-sobre span {
         color: #FF09E6;
+    }
+
+    .palestrante {
+        background-color: #19011d;
+        color: white;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .box-palestrante {
+        margin: 20px 0px;
+        max-width: 507px;
+
+    }
+
+    .box-palestrante img {
+        display: flex;
+        margin: auto;
+        width: 250px;
+
+    }
+
+    .info-palestrante {
+                max-width: 507px;
+
+    }
+    .info-palestrante h2 {
+        display: none;
+    }
+
+    .info-palestrante h3 {
+        font-size: 24px;
+        color: #00E5FF;
+    }
+
+    .cargo {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .bio {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .inscricao {
+        background-color: #7103a0;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-inscricao h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .box-inscricao p {
+        font-size: 16px;
+        font-weight: 600;
     }
 }
 
