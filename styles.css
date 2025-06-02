@@ -326,7 +326,7 @@ header{
     }
 
     .info-palestrante {
-                max-width: 507px;
+        max-width: 507px;
 
     }
     .info-palestrante h2 {
@@ -355,14 +355,55 @@ header{
         justify-content: center;
     }
 
-    .box-inscricao h2 {
+    .box-inscricao {
+        max-width: 507px;
+
+    }
+
+    .titulo-inscricao {
         font-size: 32px;
         font-weight: bold;
     }
 
-    .box-inscricao p {
+    .descricao-inscricao {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
+    }
+
+    .nota-inscricao{
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+    form {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        margin-bottom: 10px;
+        height: 20px;
+        border-radius: 7px;
+        border: none;
+    }
+
+    input::placeholder {
+        font-size: 11px;
+        padding-left: 5px;
+    }
+
+    form button {
+                margin-bottom: 10px;
+                padding: 8px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        background-color: #FF09E6;
+        font-size: 16px;
+        font-weight: bold;
+
     }
 }
 
