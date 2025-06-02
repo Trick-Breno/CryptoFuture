@@ -368,6 +368,7 @@ header{
     .descricao-inscricao {
         font-size: 16px;
         font-weight: 400;
+        margin-bottom: 50px;
     }
 
     .nota-inscricao{
@@ -384,7 +385,7 @@ header{
 
     input {
         margin-bottom: 10px;
-        height: 20px;
+        height: 22px;
         border-radius: 7px;
         border: none;
     }
