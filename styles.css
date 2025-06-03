@@ -18,6 +18,11 @@ header, main, section, footer, article {
     padding: 8px;
 
 }
+
+button {
+        font-family: "Poppins", sans-serif;
+
+}
 header{
     flex-wrap: wrap;
     justify-content: space-between;
@@ -354,6 +359,7 @@ header{
         display: flex;
         justify-content: center;
     }
+    
 
     .box-inscricao {
         max-width: 507px;
@@ -363,31 +369,30 @@ header{
     .titulo-inscricao {
         font-size: 32px;
         font-weight: bold;
+        text-align: center;
+        margin-bottom: 0px;
     }
 
     .descricao-inscricao {
         font-size: 16px;
         font-weight: 400;
-        margin-bottom: 50px;
-    }
-
-    .nota-inscricao{
-        font-size: 10px;
-        font-weight: 300;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        text-align: center;
     }
 
     form {
-        max-width: 300px;
+        max-width: 340px;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
 
     input {
-        margin-bottom: 10px;
-        height: 22px;
+        max-width: 100%;
+        margin-top: 10px;
+        padding: 10px;
         border-radius: 7px;
-        border: none;
+        border: none;        
     }
 
     input::placeholder {
@@ -395,16 +400,59 @@ header{
         padding-left: 5px;
     }
 
+    .nota-inscricao {
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+
     form button {
-                margin-bottom: 10px;
-                padding: 8px;
-        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15px;
         border: none;
         color: white;
-        background-color: #FF09E6;
+        background-color: #D404C0;;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 600;
 
+    }
+
+    .faq {
+        background-color: #19011d;
+        color: white;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .box-faq {
+        max-width: 507px;
+    }
+
+    .box-faq h2 {
+        text-align: center;
+    }
+
+    .faq-pergunta {
+        width: 100%;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: transparent;
+        color: white;
+        padding: 10px 10px 10px 15px;
+        margin-top: 30px;
+        border: 1px solid #78078E;
+        border-radius: 15px;
+    }
+
+    .faq-resposta {
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 200;
     }
 }
 
