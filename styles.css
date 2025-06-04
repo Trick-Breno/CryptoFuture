@@ -38,7 +38,7 @@ header{
     display: inline-block;          /* Garantir que o gradiente aplique corretamente */
 
     font-family: "Zen Dots", sans-serif;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -108,7 +108,6 @@ header{
     justify-content: space-between;
     gap: 30px;
     align-items: center; 
-    min-height:100vh;
     background-image: linear-gradient(100deg, #220F33, #720987);
     color: white;
 }
@@ -189,8 +188,8 @@ header{
     /* Bloco de tempo (Dias, Horas, Minutos, Segundos) */
     .tempo {
         display: flex;
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        align-items: center;    /* Centraliza o conteúdo */
+        flex-direction: column; 
+        align-items: center;
     }
     
     /* Rótulos (Dias, Horas, Minutos, Segundos) */
@@ -244,14 +243,14 @@ header{
     }
 
     .hero-content h1 {
-        text-align: left;
+        text-align: center;
         margin-bottom: 20px;
         font-size: 32px;
     }
     
     .hero-content p {
         font-size: 16px;
-        text-align: justify;
+        text-align: center;
     
     }
     
@@ -261,7 +260,7 @@ header{
         margin-top: 0px;
         width: 100%;
         border-radius: 15px;
-        padding: 13px 0px;
+        padding: 8px 0px;
     
     }
 
@@ -454,6 +453,61 @@ header{
         font-size: 14px;
         font-weight: 200;
     }
+
+    footer {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+    }
+
+    .box-footer {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 507px;
+    }
+
+    .navfooter a {
+        text-decoration: none;
+        color: #8D8D8D;
+        font-size: 14px;
+        display: flex;
+                display: none;
+
+    }
+
+    .contato {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        gap: 13px;
+    }
+    .contato img {
+        width: 40px;
+
+    }
+
+    .contato a {
+        text-decoration: none;
+    }
+
+    .copyrigth {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        color: #8D8D8D;
+        font-size: 12px;
+        margin-bottom: 0;
+
+    }
+
+    .copyrigth p {
+        margin-bottom: 0;
+    }
+
 }
 
     /* Para telas de tablets em modo retrato */
