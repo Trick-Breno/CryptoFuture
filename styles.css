@@ -260,7 +260,7 @@ header{
         margin-top: 0px;
         width: 100%;
         border-radius: 15px;
-        padding: 8px 0px;
+        padding: 10px 0px;
     
     }
 
@@ -443,15 +443,29 @@ header{
         background-color: transparent;
         color: white;
         padding: 10px 10px 10px 15px;
-        margin-top: 30px;
         border: 1px solid #78078E;
         border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-pergunta:hover {
+         transform: scale(1.05); 
     }
 
     .faq-resposta {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
         margin-left: 20px;
         font-size: 14px;
         font-weight: 200;
+ 
+    }
+
+    .faq-resposta.ativa {
+        max-height: 85px;
+                margin-bottom: 30px;
+
     }
 
     footer {

@@ -26,3 +26,14 @@ function atualizarContagem() {
 
 // Atualiza a cada segundo
 const intervaloContagem = setInterval(atualizarContagem, 1000);
+
+
+const perguntas = document.querySelectorAll('.faq-pergunta');
+
+perguntas.forEach((pergunta) => {
+  pergunta.addEventListener('click', () => {
+    const resposta = pergunta.nextElementSibling;
+    
+    resposta.classList.toggle('ativa');
+  });
+});
