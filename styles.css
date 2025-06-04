@@ -445,11 +445,14 @@ header{
         padding: 10px 10px 10px 15px;
         border: 1px solid #78078E;
         border-radius: 15px;
+    }
+
+    button ,a {
         transition: transform 0.3s ease;
     }
 
-    .faq-pergunta:hover {
-         transform: scale(1.05); 
+    button:hover, a:hover {
+         transform: scale(1.05);
     }
 
     .faq-resposta {
