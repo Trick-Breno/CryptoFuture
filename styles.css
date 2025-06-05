@@ -5,6 +5,10 @@ body {
     padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #btnTopo {
   position: fixed;
   bottom: 30px;
@@ -173,6 +177,8 @@ header{
     background-color: #D404C0;
     padding: 10px 40px;
     border: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*@media (max-width: 767px) {
