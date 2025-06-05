@@ -236,7 +236,9 @@ header{
     }
 
     .hero-content{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         max-width: 507px;
 
 
@@ -255,10 +257,10 @@ header{
     }
     
     .inscreva-se {
+        width: 344px;
         font-size: 16px;
         margin-bottom: 30px;
         margin-top: 0px;
-        width: 100%;
         border-radius: 15px;
         padding: 10px 0px;
     
@@ -375,7 +377,7 @@ header{
     .descricao-inscricao {
         font-size: 16px;
         font-weight: 400;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         text-align: center;
     }
 
@@ -445,29 +447,27 @@ header{
         padding: 10px 10px 10px 15px;
         border: 1px solid #78078E;
         border-radius: 15px;
-    }
+                        margin-right: 20px;
 
-    button ,a {
-        transition: transform 0.3s ease;
-    }
-
-    button:hover, a:hover {
-         transform: scale(1.05);
     }
 
     .faq-resposta {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 14px;
-        font-weight: 200;
+        font-weight: 400;
+        background-color: #7103a0;
+        border-radius: 15px;
  
     }
 
     .faq-resposta.ativa {
         max-height: 85px;
                 margin-bottom: 30px;
+        padding: 10px;
 
     }
 
@@ -490,8 +490,7 @@ header{
         color: #8D8D8D;
         font-size: 14px;
         display: flex;
-                display: none;
-
+        display: none;
     }
 
     .contato {
@@ -530,4 +529,11 @@ header{
     /* Para telas de tablets em modo retrato */
     @media (min-width: 768px) and (max-width: 1024px) {
         /* Estilos para tablets */
+            button ,a {
+        transition: transform 0.3s ease;
+    }
+
+    button:hover, a:hover {
+         transform: scale(1.05);
+    }
     }
