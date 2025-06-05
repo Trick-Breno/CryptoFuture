@@ -33,7 +33,25 @@ const perguntas = document.querySelectorAll('.faq-pergunta');
 perguntas.forEach((pergunta) => {
   pergunta.addEventListener('click', () => {
     const resposta = pergunta.nextElementSibling;
-    
+
     resposta.classList.toggle('ativa');
+  });
+});
+
+// Mostrar ou esconder o botão com base no scroll
+window.addEventListener('scroll', () => {
+  const botao = document.getElementById('btnTopo');
+  if (window.scrollY > 300) {
+    botao.style.display = 'block';
+  } else {
+    botao.style.display = 'none';
+  }
+});
+
+// Scroll suave para o topo
+document.getElementById('btnTopo').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 });
