@@ -49,7 +49,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Scroll suave para o topo
-document.getElementById('btnTopo').addEventListener('click', () => {
+document.getElementById('botao-topo').addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
